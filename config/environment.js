@@ -23,6 +23,16 @@ module.exports = function(environment) {
     }
   };
 
+  var config = {
+    apiKey: "AIzaSyDNlg8f71jPBY_YOmrypkWMpYLs8-E9j5U",
+    authDomain: "crowd-source-f31fe.firebaseapp.com",
+    databaseURL: "https://crowd-source-f31fe.firebaseio.com",
+    projectId: "crowd-source-f31fe",
+    storageBucket: "",
+    messagingSenderId: "756418264118"
+  };
+
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
