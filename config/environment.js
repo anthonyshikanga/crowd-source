@@ -24,13 +24,14 @@ module.exports = function(environment) {
   };
 
   var config = {
-    apiKey: "AIzaSyDNlg8f71jPBY_YOmrypkWMpYLs8-E9j5U",
-    authDomain: "crowd-source-f31fe.firebaseapp.com",
-    databaseURL: "https://crowd-source-f31fe.firebaseio.com",
-    projectId: "crowd-source-f31fe",
+    apiKey: "AIzaSyDQkxineqBU4J-MPgVoL63TprhbFzGa0aw",
+    authDomain: "festival-review.firebaseapp.com",
+    databaseURL: "https://festival-review.firebaseio.com",
+    projectId: "festival-review",
     storageBucket: "",
-    messagingSenderId: "756418264118"
+    messagingSenderId: "256724426634"
   };
+
 
 
   if (environment === 'development') {
