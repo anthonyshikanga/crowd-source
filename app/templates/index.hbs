@@ -1,3 +1,13 @@
 <h1>Welcome to CrowdSource reviews</h1>
 See reviews about:
+<ul>
+  {{#each model.festivals as |festival|}}
+  <li>
+      {{#link-to "festival" festival festival=festival}}
+        {festival.name}} in {{festival.location}}
+        <img src={{festival.venueImage}}>
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
 {{outlet}}
