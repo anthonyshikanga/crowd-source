@@ -1,0 +1,70 @@
+{{#if addNewFestival}}
+<h1>Enter Festival for review</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Festival</label>
+      {{input value=name id="name"}}
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      {{input value=category id="category"}}
+    </div>
+
+    <div class="form-group">
+      <label for="shortDescription">A short description</label>
+      {{input value=shortDescription id="shortDescription"}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">Description</label>
+      {{textarea value=content id="content"}}
+    </div>
+
+    <div class="form-group">
+      <label for="openDate">Date</label>
+      {{input type="date" value=openDate id="openDate"}}
+    </div>
+
+    <div class="form-group">
+      <label for="location">venue</label>
+      {{input value=location id="location"}}
+    </div>
+
+    <div class="form-group">
+      <label for="price">price</label>
+      {{input value=price id="price"}}
+    </div>
+
+    <div class="form-group">
+      <label for="artistImage">Artist Image URL</label>
+      {{input value=image id="image"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="artist">Artist performing</label>
+      {{input value=artist id="artist"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <div class="form-group">
+      <label for="venueImage">Image URL</label>
+      {{input value=venueImage id="venueImage"}}
+    </div>
+
+    <button {{action 'saveNewFestival'}}>Save</button>
+    <button {{action 'reset'}}>Reset Form</button>
+    <button {{action 'cancel'}}>Cancel</button>
+  </form>
+</div>
+
+{{else}}
+<button {{action 'FestivalFormShow'}}>Add A festival</button>
+{{/if}}
+{{yield}}
