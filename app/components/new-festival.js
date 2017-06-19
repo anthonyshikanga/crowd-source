@@ -18,16 +18,16 @@ export default Ember.Component.extend({
       this.set('venueImage',''),
       this.set('addNewFestival',false)
     },
-    reset(){
-      this.set('name',''),
-      this.set('category',''),
-      this.set('shortDescription',''),
-      this.set('content',''),
-      this.set('openDate',''),
-      this.set('artist',''),
-      this.set('artistImage',''),
-      this.set('location',''),
-      this.set('venueImage',''),
+    // reset(){
+      //this.set('name',''),
+    //  this.set('category',''),
+    //  this.set('shortDescription',''),
+    //  this.set('content',''),
+      //this.set('openDate',''),
+      //this.set('artist',''),
+      //this.set('artistImage',''),
+      //this.set('location',''),
+      //this.set('venueImage',''),
     },
     saveNewFestival(){
       var params= {
